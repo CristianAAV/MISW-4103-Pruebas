@@ -49,7 +49,7 @@ const seleccionarSeccion = (sectionName) => {
   cy.get(`a[href="#/${sectionName}/"]`).first().click();
   cy.wait(1000);    
   cy.url().should('equal', `${ghostUrl}/#/${sectionName}` );
-  cy.screenshot(`${sectionName} selection`);
+  cy.screenshot(`${sectionName}_selection`);
 }
 
 Cypress.Commands.add('hacerLoginIncorrecto',  (email, password) => {
@@ -57,7 +57,6 @@ Cypress.Commands.add('hacerLoginIncorrecto',  (email, password) => {
 });
 
 Cypress.Commands.add('hacerLoginCorrecto', ()=>{
-  //const {email, password} = Params;
   return ingresarCredencialesPaginaLogin(email, password, '#/dashboard', '.gh-canvas-title');  
 });
 
