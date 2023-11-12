@@ -54,20 +54,23 @@
 * Ejecutar el utilitario kraken-node doctor, y comprobar que no existan errores.
 ### Ventajas
 * Multiplataforma, puede utilizarse para el testing de aplicaciones web y moviles.
-* La sintaxis de las pruebas es legible para desarrolladores y usuarios finales
+* La sintaxis de las pruebas es legible para desarrolladores y usuarios finales.
+* Maneja un lenguaje más amigable y entendible para todos los usuarios.
 ### Desventajas
-* Difícil de instalar y configurar, nos llevo bastantes horas instalar adecuadamente la herramienta
-* Lento, la ejecución de cada prueba demora
+* Difícil de instalar y configurar, nos llevo bastantes horas instalar adecuadamente la herramienta.
+* Lento, la ejecución de cada prueba demora.
+* Cuenta con poca documentación.
+* No soporta varios features a la vez, hay que utilizar uno y dentro de este montar todos los escenarios de pruebas.
 ## Cypress
 ### Requisitos
 * NodeJS lts
 ### Configuracion
 * Tener instalado el pagquete de manera global
 ### Ventajas
-* Fácil de instalar y configurar
-* Buena documentación
+* Fácil de instalar y configurar.
+* Buena documentación.
 ### Desventajas
-* Se nos fue confuso configurar las funciones compartidas
+* Se nos fue confuso configurar las funciones compartidas.
 ## Ejecucion del Proyecto
 ### Kraken-node
 * npm install kraken-node -g
