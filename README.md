@@ -19,7 +19,7 @@
 | Identificador | Descripcion |
 | ----- | ----------- |
 | 01 |  Crear nuevo tag con datos vacios  |
-| 02 |  Crear nuevo tag con color invalido  | 
+| 02 |  Crear nuevo tag con color invalido  |
 | 03 |  Crear nuevo tag con una descripcion mayor a 500 caracteres |
 | 04 |  Crear nuevo tag con datos validos |
 | 05 |  Modificar titulo de tag existente |
@@ -37,10 +37,15 @@
 | 17 |  Crear member con datos vacios |
 | 18 |  Crear member con datos existentes |
 | 19 |  Modificar name y email de miembro existente |
-| 20 |  Crear y Eliminar tag existente | 
+| 20 |  Eliminar miembro existente |
+
 ## Ghost
 ### Configuración
+* Para la ejecucion de las pruebas es importante realizar una instalacion limpia de el Ghost, por esto se solicita eliminar cualquier contenedor de Ghost que se tenga en Docker.
 * Instalar la versión de ghost que esta en docker (https://hub.docker.com/_/ghost/).
+Codigo a ejecutar: docker run -d --name some-ghost -e NODE_ENV=development -e url=http://localhost:3001 -p 3001:2368 ghost
+* Abrir el enlace http://localhost:3001/ghost/#/dashboard, crear un usuario administrador.
+
 ## Kraken-node
 ### Requisitos
 * Android SDK
@@ -68,24 +73,33 @@
 ### Requisitos
 * NodeJS lts
 ### Configuracion
-* Tener instalado el pagquete de manera global
+* Tener instalado el pagquete cypress de manera global
 ### Ventajas
 * Fácil de instalar y configurar.
 * Buena documentación.
 ### Desventajas
 * Se nos fue confuso configurar las funciones compartidas.
+
 ## Ejecucion del Proyecto
+* Es importante haber leido y realizado los pasos anteriores.
+
 ### Kraken-node
+* clonar el repositorio, ir a la carpeta e2e_ghost_kraken e instalar las dependencias.
 * npm install
 * npm install kraken-node -g
 * npm install -g appium
 * npm install -g @cucumber/cucumber@7.2.1
-* clonar el repositorio, ir a la carpeta e2e_ghost_kraken e instalar las dependencias.
+* npm install @cucumber/cucumber@7.2.1
 * Ir al archivo properties.json y cambiar  el email y el password según el usuario que se tiene en Ghost.
+* Para la ejecucion secunecial de kraken se desarrollo un codigo que copia y pega los archivos de preubas los ejecuta y los elimina post ejecucion. Para ejecutarlo escriba el siguiente comando: node ejecutar2.js
+* Este ejecuta y confirma el resultado de la prueba, pero la ejecucion es algo lenta si por algun motivo siente que no siguio ejecutando oprima una flecha en la consola donde esta ejecutando el codigo.
+* Es necesario ejecutar las pruebas de forma secuencial incrementalmente, si desea validar un test de forma individual debe dirigirse a la carpeta  ...\MISW-4103-Pruebas\e2e_ghost_kraken\features\features.  Seleccionar la prueba que desea ejecutar copiarlo y pegarlo en ...\MISW-4103-Pruebas\e2e_ghost_kraken\features. Ejecutarlo con el comando: npx kraken-node run. (para la prueba 16 es importante que no existan miembros con el correo newmember@uniandes.edu.co, debido a que los miembros no pueden contener correos repetidos)
+
 ### Cypress 
-* npm install -g cypress
 * clonar el repositorio, ir a la carpeta e2e_ghost_cypress
+* npm install -g cypress
 * Instalar las dependencias con el comando npm i
 * Ir al archivo params.js y cambiar  el email y el password según el usuario que se tiene en Ghost.
 * Para ejecutar las pruebas ejecutar el comando: npx cypress run --headless
 * Opcionalemente puede ejecutar el comanado:  npx cypress open
+* Es necesario ejecutar las pruebas de forma secuencial incrementalmente (para la prueba 16 es importante que no existan miembros con el correo newmember@uniandes.edu.co, debido a que los miembros no pueden contener correos repetidos)
