@@ -1,12 +1,12 @@
-import { Params } from '../../params';
+import { Params } from '../e2e_ghost_cypress/params';
 
 describe('Como administrador quiero hacer login con credenciales correctas', () => {
   //Escenario 1
   /**/
-  it('Hacer login con las credenciales correctas', () => {
-    cy.hacerLoginCorrecto();
-    cy.screenshot(`login_credenciales_correctas`);
-  });
+  // it('Hacer login con las credenciales correctas', () => {
+  //   cy.hacerLoginCorrecto();
+  //   cy.screenshot(`login_credenciales_correctas`);
+  // });
   /**/
 
   //Escenario 2
@@ -24,4 +24,11 @@ describe('Como administrador quiero hacer login con credenciales correctas', () 
     cy.screenshot(`login_credenciales_vacias`);
   });
  /**/
+  //Escenario 1.5
+  /**/
+  it('Hacer login con las credenciales correctas', () => {
+    cy.hacerLoginCorrecto();
+    cy.screenshot(`login_credenciales_correctas`);
+  });
+  /**/
 })

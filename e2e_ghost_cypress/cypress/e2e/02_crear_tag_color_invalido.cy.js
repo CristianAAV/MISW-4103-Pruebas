@@ -1,4 +1,4 @@
-import { Params } from '../../params';
+import { Params } from '../e2e_ghost_cypress/params';
 import { faker } from '@faker-js/faker';
 
 describe('Funcionalidad de crear tags', () => {
