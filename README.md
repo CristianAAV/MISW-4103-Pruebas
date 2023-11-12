@@ -38,6 +38,9 @@
 | 18 |  Crear member con datos existentes |
 | 19 |  Modificar name y email de miembro existente |
 | 20 |  Crear y Eliminar tag existente | 
+## Ghost
+### Configuración
+* Instalar la versión de ghost que esta en docker (https://hub.docker.com/_/ghost/).
 ## Kraken-node
 ### Requisitos
 * Android SDK
@@ -73,13 +76,16 @@
 * Se nos fue confuso configurar las funciones compartidas.
 ## Ejecucion del Proyecto
 ### Kraken-node
+* npm install
 * npm install kraken-node -g
 * npm install -g appium
 * npm install -g @cucumber/cucumber@7.2.1
-* clonar el repositorio, ir a la carpeta ... e instalar las dependencias
-### Cypress
+* clonar el repositorio, ir a la carpeta e2e_ghost_kraken e instalar las dependencias.
+* Ir al archivo properties.json y cambiar  el email y el password según el usuario que se tiene en Ghost.
+### Cypress 
 * npm install -g cypress
 * clonar el repositorio, ir a la carpeta e2e_ghost_cypress
 * Instalar las dependencias con el comando npm i
+* Ir al archivo params.js y cambiar  el email y el password según el usuario que se tiene en Ghost.
 * Para ejecutar las pruebas ejecutar el comando: npx cypress run --headless
 * Opcionalemente puede ejecutar el comanado:  npx cypress open
