@@ -38,6 +38,9 @@
 | 18 |  Crear member con datos existentes |
 | 19 |  Modificar name y email de miembro existente |
 | 20 |  Crear y Eliminar tag existente | 
+## Ghost
+### Configuración
+* Instalar la versión de ghost que esta en docker (https://hub.docker.com/_/ghost/).
 ## Kraken-node
 ### Requisitos
 * Android SDK
