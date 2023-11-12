@@ -18,26 +18,26 @@
 ## Escenarios
 | Identificador | Descripcion |
 | ----- | ----------- |
-| Esc_01 |  Crear nuevo tag con datos vacios  |
-| Esc_02   |  Crear nuevo tag con color invalido  | 
-| Esc_03    |  Crear nuevo tag con una descripcion mayor a 500 caracteres |
-| Esc_04 |  Crear nuevo tag con datos validos |
-| Esc_05 |  Modificar titulo de tag existente |
-| Esc_06 |  Modificar tag con descripcion invalida |
-| Esc_07 |  Eliminar tag existente   |
-| Esc_08 |  Crear pages |
-| Esc_09 |  Crear pages y editar |
-| Esc_10 |  Eliminar pages o draft |
-| Esc_11 |  Verificar creación de pages con un titulo de 255 caracteres |
-| Esc_12 |  Crear post y verificar |
-| Esc_13 |  Crear post y editar |
-| Esc_14 |  Crear post con titulo vacio pero con descripsción |
-| Esc_15 |  Crear post y preview |
-| Esc_16 |  Crear member con datos validos |
-| Esc_17 |  Crear member con datos vacios |
-| Esc_18 |  Crear member con datos existentes |
-| Esc_19 |  Modificar name y email de miembro existente |
-| Esc_20 |  Crear y Eliminar tag existente | 
+| 01 |  Crear nuevo tag con datos vacios  |
+| 02 |  Crear nuevo tag con color invalido  | 
+| 03 |  Crear nuevo tag con una descripcion mayor a 500 caracteres |
+| 04 |  Crear nuevo tag con datos validos |
+| 05 |  Modificar titulo de tag existente |
+| 06 |  Modificar tag con descripcion invalida |
+| 07 |  Eliminar tag existente   |
+| 08 |  Crear pages |
+| 09 |  Crear pages y editar |
+| 10 |  Eliminar pages o draft |
+| 11 |  Verificar creación de pages con un titulo de 255 caracteres |
+| 12 |  Crear post y verificar |
+| 13 |  Crear post y editar |
+| 14 |  Crear post con titulo vacio pero con descripsción |
+| 15 |  Crear post y preview |
+| 16 |  Crear member con datos validos |
+| 17 |  Crear member con datos vacios |
+| 18 |  Crear member con datos existentes |
+| 19 |  Modificar name y email de miembro existente |
+| 20 |  Crear y Eliminar tag existente | 
 ## Kraken-node
 ### Requisitos
 * Android SDK
