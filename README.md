@@ -76,6 +76,7 @@
 * Se nos fue confuso configurar las funciones compartidas.
 ## Ejecucion del Proyecto
 ### Kraken-node
+* npm install
 * npm install kraken-node -g
 * npm install -g appium
 * npm install -g @cucumber/cucumber@7.2.1
