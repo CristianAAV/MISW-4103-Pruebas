@@ -79,4 +79,7 @@
 * clonar el repositorio, ir a la carpeta ... e instalar las dependencias
 ### Cypress
 * npm install -g cypress
-* clonar el repositorio, ir a la carpeta ... e instalar las dependencias
+* clonar el repositorio, ir a la carpeta e2e_ghost_cypress
+* Instalar las dependencias con el comando npm i
+* Para ejecutar las pruebas ejecutar el comando: npx cypress run --headless
+* Opcionalemente puede ejecutar el comanado:  npx cypress open
