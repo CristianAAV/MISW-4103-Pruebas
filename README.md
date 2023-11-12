@@ -13,7 +13,7 @@
 3. Crear page
 4. Crear post
 5. Crear member
-6. Modificar membe
+6. Modificar member
 
 ## Escenarios
 | Identificador | Descripcion |
