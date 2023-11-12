@@ -1,4 +1,3 @@
-import { Params } from '../../params';
 import { faker } from '@faker-js/faker';
 
 describe('Funcionalidad de crear posts', () => {

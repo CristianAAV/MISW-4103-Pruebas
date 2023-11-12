@@ -1,5 +1,3 @@
-import { faker } from '@faker-js/faker';
-
 describe('Funcionalidad de crear eliminar members', () => {
   const seccion = 'members';
   let membersName = '';
