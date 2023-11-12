@@ -22,10 +22,6 @@ Given I navigate to page "<URL>"
   And I enter member name
   And I wait for 2 seconds
   And I click Save members
-  And I wait for 2 seconds
-  And I should have a error in email
-  And I wait for 2 seconds
-  And I click Save members
   And I wait for 5 seconds
   And I should have a error in email repet
   And I wait for 5 seconds

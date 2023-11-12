@@ -19,3 +19,4 @@ Scenario: Como administrador quiero hacer login a ghost
   When I click Save
   And I wait for 1 seconds
   Then I should have a retry button
+  And I wait for 5 seconds

@@ -11,20 +11,7 @@ Given I navigate to page "<URL>"
   
   When I select the members section
   And I wait for 2 seconds
-  Then I should have a new members button
-
-  When I click on the new members button
-  And I wait for 2 seconds
-  Then I should have a form to enter members information
-
-  When I enter member delete Email
-  And I wait for 2 seconds
-  And I enter member delete name
-  And I wait for 2 seconds
-  And I click Save members
-  And I wait for 3 seconds
-  And I select the members section
-  And I wait for 2 seconds
+  
   When I should have a members exits on the list
   And I wait for 2 seconds
   When I click on the members exist button

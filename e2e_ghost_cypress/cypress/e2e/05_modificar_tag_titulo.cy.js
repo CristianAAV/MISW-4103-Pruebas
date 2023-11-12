@@ -1,4 +1,3 @@
-import { Params } from '../e2e_ghost_cypress/params';
 import { faker } from '@faker-js/faker';
 
 describe('Funcionalidad de modificar tags', () => {

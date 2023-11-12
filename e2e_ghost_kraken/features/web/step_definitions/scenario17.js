@@ -26,7 +26,7 @@ Then("I should have a error in email", async function () {
 Then("I should have a color red in save Botton", async function () {
 
     let Celement = await this.driver.$("section.view-actions button").getCSSProperty('background-color');
-    let color="rgb(212,9,29)";
+    let color="rgb(212, 9, 29)";
     console.log(Celement.value);
     if(Celement.value == color ){
       throw new Error("The color is not red");

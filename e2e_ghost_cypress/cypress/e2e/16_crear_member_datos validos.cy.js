@@ -15,14 +15,15 @@ describe('Funcionalidad de crear members', () => {
     cy.get(`a[href="#/${seccion}/new/"]`).first().click();
     cy.screenshot(`${ESCENARIO}_step_1`);
 
+
+    membersEmail = "newmember@uniandes.edu.co";
+    cy.get('#member-email').type(membersEmail);  
+    cy.screenshot(`${ESCENARIO}_step_3`);
+
     //Ingreso del nombre del member
     membersName = "new member";
     cy.get('#member-name').type(membersName);  
     cy.screenshot(`${ESCENARIO}_step_2`);
-
-    membersEmail = membersName+"@uniandes.edu.co";
-    cy.get('#member-email').type(membersEmail);  
-    cy.screenshot(`${ESCENARIO}_step_3`);
     
 
     cy.get('[data-test-button="save"]').click();

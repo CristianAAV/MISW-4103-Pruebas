@@ -26,7 +26,7 @@ describe('Funcionalidad de crear members', () => {
     cy.get('#member-name').type(membersName);  
     cy.screenshot(`${ESCENARIO}_step_2`);
 
-    membersEmail = membersName+"@uniandes.edu.co";
+    membersEmail = "newmember@uniandes.edu.co";
     cy.get('#member-email').type(membersEmail);  
     cy.screenshot(`${ESCENARIO}_step_3`);
     

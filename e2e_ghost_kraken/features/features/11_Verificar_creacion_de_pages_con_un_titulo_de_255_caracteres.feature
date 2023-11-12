@@ -2,14 +2,13 @@ Feature: My feature
 
  @user4 @web
  Scenario: Verificar creación de pages con un titulo de 255 caracteres
-  Given I navigate to page "http://localhost:3001/ghost/#/signin"
-  And I wait for 5 seconds
-  When I enter identification "o.manco@uniandes.edu.co"
+Given I navigate to page "<URL>"
   And I wait for 2 seconds
-  And I enter password "_wj3S_zM4*c.bUv"
+  When I login to ghost "<EMAIL>" "<PASSWORD>"
   And I wait for 2 seconds
-  And I click next
-  And I wait for 7 seconds
+  Then I should be logged
+
+  And I wait for 2 seconds
   Then I should be on the admin section
   When I click on the page
   And I wait for 2 seconds

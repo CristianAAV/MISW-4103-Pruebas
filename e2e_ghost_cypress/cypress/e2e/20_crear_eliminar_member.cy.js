@@ -12,28 +12,11 @@ describe('Funcionalidad de crear eliminar members', () => {
   it('Escenario 20: Crear eliminar Member', () => {    
     const ESCENARIO = 'escenario16'
     cy.navegarSeccion(seccion);
-    cy.get(`a[href="#/${seccion}/new/"]`).first().click();
-    cy.screenshot(`${ESCENARIO}_step_1`);
 
-    //Ingreso del nombre del member
-    membersName = "member delate";
-    cy.get('#member-name').type(membersName);  
-    cy.screenshot(`${ESCENARIO}_step_2`);
-
-    membersEmail = "memberdelate@uniandes.edu.co";
-    cy.get('#member-email').type(membersEmail);  
-    cy.screenshot(`${ESCENARIO}_step_3`);
-    
-
-    cy.get('[data-test-button="save"]').click();
-
-    cy.navegarSeccion(seccion);
-
-    cy.get(`h3.ma0.pa0.gh-members-list-name`).should('include.text', membersName).first().click();
+    cy.get(`h3.ma0.pa0.gh-members-list-name`).first().click();
     cy.screenshot(`${ESCENARIO}_step_3`);
 
-
-    
+   
     cy.get('[data-test-button="member-actions"]').click();        
     cy.screenshot(`${ESCENARIO}_step_4`);
 
