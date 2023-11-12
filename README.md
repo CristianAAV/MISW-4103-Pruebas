@@ -25,9 +25,9 @@
 | Esc_05 |  Modificar titulo de tag existente |
 | Esc_06 |  Modificar tag con descripcion invalida |
 | Esc_07 |  Eliminar tag existente   |
-| Esc_08 |  Crear pages y verificar |
+| Esc_08 |  Crear pages |
 | Esc_09 |  Crear pages y editar |
-| Esc_10 |  Crear pages y eliminar |
+| Esc_10 |  Eliminar pages o draft |
 | Esc_11 |  Verificar creación de pages con un titulo de 255 caracteres |
 | Esc_12 |  Crear post y verificar |
 | Esc_13 |  Crear post y editar |
