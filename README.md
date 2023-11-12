@@ -94,7 +94,9 @@ Codigo a ejecutar: docker run -d --name some-ghost -e NODE_ENV=development -e ur
 * Para la ejecucion secunecial de kraken se desarrollo un codigo que copia y pega los archivos de preubas los ejecuta y los elimina post ejecucion.
 * Para ejecutarlo escriba el siguiente comando: node ejecutar2.js
 * Este ejecuta y confirma el resultado de la prueba, pero la ejecucion es algo lenta si por algun motivo siente que no siguio ejecutando oprima una flecha en la consola donde esta ejecutando el codigo.
+* Si por algun motivo la ejecucion del codigo se cancela o se traba y cierras la ejecucion es importante validar que en la carpeta  ...\MISW-4103-Pruebas\e2e_ghost_kraken\features no existan archivos con la extencion .feature ya que de lo contrario el kraken no podra ejecutarse correctamente con el script desarrollado (adicional verificar no existan members creados).
 * Es necesario ejecutar las pruebas de forma secuencial incrementalmente, si desea validar un test de forma individual debe dirigirse a la carpeta  ...\MISW-4103-Pruebas\e2e_ghost_kraken\features\features. Seleccionar la prueba que desea ejecutar copiarlo y pegarlo en ...\MISW-4103-Pruebas\e2e_ghost_kraken\features. Ejecutarlo con el comando: npx kraken-node run. (para la prueba 16 es importante que no existan miembros con el correo newmember@uniandes.edu.co, debido a que los miembros no pueden contener correos repetidos)
+
 
 ### Cypress 
 * clonar el repositorio, ir a la carpeta e2e_ghost_cypress
