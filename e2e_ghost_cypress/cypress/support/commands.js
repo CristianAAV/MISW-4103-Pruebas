@@ -24,12 +24,13 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-import { Params } from '../../params';
-const { ghostUrl, email, password } = Params;  
+const ghostUrl = Cypress.config('baseUrl');
+const password = Cypress.env('password');
+const email = Cypress.env('email');
 
 const ingresarCredencialesPaginaLogin = (email, password, nextUrl, tagHtml) => {
   //Given the url  
-  cy.visit(ghostUrl);  
+  cy.visit(ghostUrl);
   
   if (email)
     cy.get('input[name="identification"]').type(email);
@@ -49,7 +50,6 @@ const seleccionarSeccion = (sectionName) => {
   cy.get(`a[href="#/${sectionName}/"]`).first().click();
   cy.wait(1000);    
   cy.url().should('equal', `${ghostUrl}/#/${sectionName}` );
-  cy.screenshot(`${sectionName}_selection`);
 }
 
 Cypress.Commands.add('hacerLoginIncorrecto',  (email, password) => {
