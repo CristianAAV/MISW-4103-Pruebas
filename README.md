@@ -16,6 +16,8 @@
 6. Modificar member
 
 ## Escenarios
+
+### Escenarios de de Funcionalidaes:
 | Identificador | Descripcion |
 | ----- | ----------- |
 | 01 |  Crear nuevo tag con datos vacios  |
@@ -38,6 +40,20 @@
 | 18 |  Crear member con datos existentes |
 | 19 |  Modificar name y email de miembro existente |
 | 20 |  Eliminar miembro existente |
+
+### Escenarios seleccionados para Regresión Visual
+| Escenario   | Herramienta |
+|-------------|-------------|
+|             | ResembleJS  |
+|             | ResembleJS  |
+|             | ResembleJS  |
+| escenario09 | ResembleJS  |
+| escenario12 | BackstopJS  |
+| escenario15 | BackstopJS  |
+| escenario16 | BackstopJS  |
+| escenario17 | BackstopJS  |
+| escenario18 | BackstopJS  |
+| escenario20 | BackstopJS  |
 
 ## Ghost
 ### Configuración
@@ -111,11 +127,23 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Es necesario ejecutar las pruebas de forma secuencial incrementalmente (para la prueba 16 es importante que no existan miembros con el correo newmember@uniandes.edu.co, debido a que los miembros no pueden contener correos repetidos)
 
 ### Resemble.js
-* Clonar el repositorio.
-* Instalar Playwright por medio del siguiente comando: npm install playwright.
-* Instalar Resemble.js por medio del siguiente comando: npm install resemblejs.
-* Ejecutar el siguiente comando desde una terminal ubicada en el directorio del proyecto: node index.js.
-
+* Clonar el repositorio y dirigirse a la carpeta "e2e_ghost_cypress"
+* Instalar las dependencias con el comando "npm install"
+* Las pruebas de ghost tanto para la version 4.44 como 5.71 se encuentran en los folders "\cypress\e2e\4" y "\cypress\e2e\5" respectivamnte
+* El archivo de configuracion se encuentra en "cypress.config.js", alli podra colocar las URLs asi como las credenciales para cada version:
+  ![config_cypress](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/assets/142269475/b794c75f-f536-4afe-ab4a-89ba34516476)
+* Borrar el folder "vrt" antes de ejecutar las pruebas
+* Para ejecutar las pruebas para la version 4, ejecute el siguiente comando: npx cypress run --env VERSION=4 --spec "cypress/e2e/4/*.cy.js"
+* Para ejecutar las pruebas para la version 5, ejecute el siguiente comando: npx cypress run --env VERSION=5 --spec "cypress/e2e/5/*.cy.js"
+* Las imagenenes correspondientes a cada prueba se almacenan en la carpeta "\vrt\[version_ghost]"
+  #### Ventajas:
+  - Fácil uso ya que posee una sintaxis sencilla.
+  - Permite comparar de imagenes de manera visual
+  - Permite ajustar los porametros de comparación según las necesidades.
+  #### Desventajas:
+  - Tiene bastante sensibilidad a la hora de encontrar pequeños cambios, generando falsos positivos o negativos en la comparación.
+  - Dependiendo del tamaño de las imagenes podria variar el rendimiento del mismo,
+    
 ### Backstop.js
 * Clonar el repositorio.
 * npm install -g backstopjs.
