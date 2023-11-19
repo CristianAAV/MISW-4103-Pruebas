@@ -127,6 +127,7 @@ function setFolders(pathImagesV4, pathImagesV5, resImagesPath){
 /*****************************************************************************/
 async function ejecutarVrt(resImagesPath){
   const filesFolderV1 = fs.readdirSync(`${resImagesPath}/${GHOSTV4}`);
+  const filesFolderV2 = fs.readdirSync(`${resImagesPath}/${GHOSTV5}`);
   
   let resultInfo = {}
   for(i in filesFolderV1){
@@ -134,13 +135,14 @@ async function ejecutarVrt(resImagesPath){
     const pathImageV1 = `${resImagesPath}/${GHOSTV4}/${screenshotFileName}`;
     const pathImageV2 = `${resImagesPath}/${GHOSTV5}/${screenshotFileName}`;
     const pathImageComparision = `${resImagesPath}/comparision/${screenshotFileName}`;  
-    const imageExists = pathImageV2.includes(screenshotFileName);
+    const imageExists = filesFolderV2.includes(screenshotFileName);
     const infoScenario = screenshotFileName.replace('.png', '').split('_');
     const keyEscenario = `${infoScenario[0]}_${infoScenario[1]}`
-    
+
     if(escenariosVrt.length > 0 && !escenariosVrt.includes(infoScenario[0])){
       continue
     }
+    
     if (imageExists){
       const data = await compareImages(
         fs.readFileSync(pathImageV1),
@@ -181,7 +183,7 @@ async function ejecutarVrt(resImagesPath){
         analysisTime: null,
       }
     }
-    console.log(`Analizando escenario:${infoScenario[0]}: paso:${infoScenario[0]} (${imageExists?'existen ambas imagenes':'NO EXISTE'})`);
+    console.log(`Analizando escenario:${infoScenario[0]}: paso:${infoScenario[1]} (${imageExists?'existen ambas imagenes':'NO EXISTE'})`);
   }
   return resultInfo;
 }
