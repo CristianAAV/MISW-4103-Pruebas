@@ -44,9 +44,9 @@
 ### Escenarios seleccionados para Regresión Visual
 | Escenario   | Herramienta |
 |-------------|-------------|
-|             | ResembleJS  |
-|             | ResembleJS  |
-|             | ResembleJS  |
+| escenario01 | ResembleJS  |
+| escenario03 | ResembleJS  |
+| escenario07 | ResembleJS  |
 | escenario09 | ResembleJS  |
 | escenario12 | BackstopJS  |
 | escenario15 | BackstopJS  |
