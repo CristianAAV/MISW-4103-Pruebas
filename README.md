@@ -101,7 +101,6 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Si por algun motivo la ejecucion del codigo se cancela o se traba y cierras la ejecucion es importante validar que en la carpeta  ...\MISW-4103-Pruebas\e2e_ghost_kraken\features no existan archivos con la extencion .feature ya que de lo contrario el kraken no podra ejecutarse correctamente con el script desarrollado (adicional verificar no existan members creados).
 * Es necesario ejecutar las pruebas de forma secuencial incrementalmente, si desea validar un test de forma individual debe dirigirse a la carpeta  ...\MISW-4103-Pruebas\e2e_ghost_kraken\features\features. Seleccionar la prueba que desea ejecutar copiarlo y pegarlo en ...\MISW-4103-Pruebas\e2e_ghost_kraken\features. Ejecutarlo con el comando: npx kraken-node run. (para la prueba 16 es importante que no existan miembros con el correo newmember@uniandes.edu.co, debido a que los miembros no pueden contener correos repetidos)
 
-
 ### Cypress 
 * clonar el repositorio, ir a la carpeta e2e_ghost_cypress
 * npm install -g cypress
@@ -110,3 +109,17 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Para ejecutar las pruebas ejecutar el comando: npx cypress run --headless
 * Opcionalemente puede ejecutar el comanado:  npx cypress open
 * Es necesario ejecutar las pruebas de forma secuencial incrementalmente (para la prueba 16 es importante que no existan miembros con el correo newmember@uniandes.edu.co, debido a que los miembros no pueden contener correos repetidos)
+
+### Resemble.js
+* Clonar el repositorio.
+* Instalar Playwright por medio del siguiente comando: npm install playwright.
+* Instalar Resemble.js por medio del siguiente comando: npm install resemblejs.
+* Ejecutar el siguiente comando desde una terminal ubicada en el directorio del proyecto: node index.js.
+
+### Backstop.js
+* Clonar el repositorio.
+* npm install -g backstopjs.
+* Ejecutar el siguiente comando: backstop init.
+* Ejecutar el siguiente comando: backstop test.
+* Ejecutar el siguiente comando: backstop approve.
+* 
