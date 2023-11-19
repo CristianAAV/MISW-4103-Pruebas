@@ -62,7 +62,8 @@
 Codigo a ejecutar:
     docker run -d --name ghostv4 -e NODE_ENV=development -e url=http://localhost:3001 -p 3004:2368 ghost:4.44
     docker run -d --name ghostv5 -e NODE_ENV=development -e url=http://localhost:3001 -p 3005:2368 ghost:5.71
-* Abrir el enlace http://localhost:3001/ghost/#/dashboard, crear un usuario administrador.
+* Abrir el enlace http://localhost:3004/ghost/#/dashboard para ka versión 4.44, crear un usuario administrador.
+* Abrir el enlace http://localhost:3005/ghost/#/dashboard para ka versión 5.71, crear un usuario administrador.
 
 ## Kraken-node
 ### Requisitos
@@ -138,6 +139,8 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Para ejecutar las pruebas para la version 4, ejecute el siguiente comando: npx cypress run --env VERSION=4 --spec "cypress/e2e/4/*.cy.js"
 * Para ejecutar las pruebas para la version 5, ejecute el siguiente comando: npx cypress run --env VERSION=5 --spec "cypress/e2e/5/*.cy.js"
 * Las imagenenes correspondientes a cada prueba se almacenan en la carpeta "\vrt\[version_ghost]"
+  #### Reporte de resultados:
+    https://echaparroa-uniandes.github.io/MISW-4103-VRT_resemble/
   #### Ventajas:
   - Fácil uso ya que posee una sintaxis sencilla.
   - Permite comparar de imagenes de manera visual.
@@ -150,8 +153,9 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Clonar el repositorio.
 * npm install -g backstopjs.
 * Ejecutar el siguiente comando: backstop init.
-* Ejecutar el siguiente comando: backstop test.
-* Ejecutar el siguiente comando: backstop approve.
+* Ejecutar el siguiente comando: node VRT.JS, se generará el archivo Backstop.js y se ejecutaran las pruebas de VRT.
+  #### Reporte de resultados:
+    
   #### Ventajas:
   - Es fácil de integrar con flujos de trabajo de desarrollo y sistemas de integración continua (CI) para asegurar que las pruebas visuales se ejecuten automáticamente durante el proceso de desarrollo.
   - Permite ajustar los porametros de comparación según las necesidades.
