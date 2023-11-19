@@ -80,6 +80,10 @@ Codigo a ejecutar: docker run -d --name some-ghost -e NODE_ENV=development -e ur
 ### Desventajas
 * Se nos fue confuso configurar las funciones compartidas.
 
+## Instrucciones de Ejecucion Semana 5
+Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/wiki/Readme-semana-5)
+
+
 ## Ejecucion del Proyecto
 * Es importante haber leido y realizado los pasos anteriores.
 
