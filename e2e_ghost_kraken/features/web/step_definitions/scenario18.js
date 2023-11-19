@@ -33,4 +33,13 @@ Then("I should have a color red in Retry Botton", async function () {
     }
     return await Celement;
 });
+
+Then ("I should have banner a error in email repet", async function () {
+  let text ="Validation error, cannot save member. Member already exists. Attempting to add member with existing email address"
+  let Telement = await this.driver.$('.gh-alert.gh-alert-red.ember-view').getText();
+  if(Telement != text ){
+      throw new Error("The mensaje is not correct");
+    }
+    return await Telement;
+});
   

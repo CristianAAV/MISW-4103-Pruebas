@@ -73,3 +73,58 @@ When("I click Preview", async function () {
   let element = await this.driver.$("button.gh-btn.gh-btn-editor.gh-editor-preview-trigger");
   return await element.click();
 });
+
+
+
+
+
+
+
+When("I click post descripton 1", async function () {
+  let element = await this.driver.$(".koenig-editor__editor-wrapper");
+  return await element.click();
+});
+
+When("I click Publish 1", async function () {
+  let element = await this.driver.$('div.ember-view.ember-basic-dropdown-trigger.gh-btn.gh-btn-editor.gh-publishmenu-trigger');
+  return await element.click();
+});
+
+
+When("I click Publish preview", async function () {
+  let element = await this.driver.$('.gh-publishmenu .gh-btn-editor.green');
+  return await element.click();
+});
+
+
+When("I click Publish 2", async function () {
+  let element = await this.driver.$("button.gh-btn.gh-btn-black.gh-publishmenu-button.gh-btn-icon.ember-view");
+  return await element.click();
+});
+
+When("I click publish post 1", async function () {
+  let element = await this.driver.$("button.gh-btn.gh-btn-black.gh-btn-icon.ember-view");
+  return await element.click();
+});
+
+
+When("I click update", async function () {
+  let element = await this.driver.$("div.ember-view.ember-basic-dropdown-trigger.gh-btn.gh-btn-editor.green.gh-publishmenu-trigger");
+  return await element.click();
+});
+
+When("I click update 1", async function () {
+  let element = await this.driver.$('.gh-publishmenu-footer .gh-publishmenu-button');
+  return await element.click();
+});
+
+When("I enter post descripton 1", async function () {
+  const randomDescription = "post description";
+  let element = await this.driver.$(".koenig-editor__editor-wrapper");
+  return await element.setValue(randomDescription);
+});
+
+When("I click Preview 1", async function () {
+  let element = await this.driver.$("button.gh-btn.gh-editor-preview-trigger");
+  return await element.click();
+});

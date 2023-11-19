@@ -1,5 +1,8 @@
 {
-  "URL": "http://localhost:3001/ghost/",
+  "URL": "http://localhost:3005/ghost/",
   "EMAIL": "ca.ariasv1@uniandes.edu.co",
-  "PASSWORD": "Carias12345"
+  "PASSWORD": "Carias12345",
+
+  "URL1": "http://localhost:3004/ghost/"
 }
+

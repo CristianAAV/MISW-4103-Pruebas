@@ -1,0 +1,40 @@
+
+Feature: crear pagina
+
+@user1 @web
+Scenario: Como administrador quiero hacer login a ghost
+Given I navigate to page "<URL>"
+  And I wait for 2 seconds
+  And I screenshotV5 "Escenario19" "step01"
+  When I login to ghost "<EMAIL>" "<PASSWORD>"
+  And I wait for 2 seconds
+  And I screenshotV5 "Escenario19" "step02"
+  Then I should be logged
+  And I screenshotV5 "Escenario19" "step03"
+  
+  When I select the members section
+  And I wait for 2 seconds
+  And I screenshotV5 "Escenario19" "step04"
+  Then I should have a members exist button
+  And I wait for 2 seconds
+  And I screenshotV5 "Escenario19" "step05"
+
+  When I click on the members exist button
+  And I wait for 2 seconds
+  And I screenshotV5 "Escenario19" "step06"
+  Then I should have a form to enter members information
+  And I screenshotV5 "Escenario19" "step07"
+
+  When I enter member exist Email
+  And I wait for 2 seconds
+  And I screenshotV5 "Escenario19" "step08"
+  And I enter member exist name
+  And I wait for 2 seconds
+  And I screenshotV5 "Escenario19" "step09"
+
+  When I click Save members exits
+  And I wait for 2 seconds
+  And I screenshotV5 "Escenario19" "step10"
+  Then I should have a members exits on the list
+  And I wait for 2 seconds
+  And I screenshotV5 "Escenario19" "step11"
