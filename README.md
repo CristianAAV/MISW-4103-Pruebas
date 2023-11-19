@@ -138,7 +138,7 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Las imagenenes correspondientes a cada prueba se almacenan en la carpeta "\vrt\[version_ghost]"
   #### Ventajas:
   - Fácil uso ya que posee una sintaxis sencilla.
-  - Permite comparar de imagenes de manera visual
+  - Permite comparar de imagenes de manera visual.
   - Permite ajustar los porametros de comparación según las necesidades.
   #### Desventajas:
   - Tiene bastante sensibilidad a la hora de encontrar pequeños cambios, generando falsos positivos o negativos en la comparación.
@@ -150,4 +150,12 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Ejecutar el siguiente comando: backstop init.
 * Ejecutar el siguiente comando: backstop test.
 * Ejecutar el siguiente comando: backstop approve.
-* 
+  #### Ventajas:
+  - Es fácil de integrar con flujos de trabajo de desarrollo y sistemas de integración continua (CI) para asegurar que las pruebas visuales se ejecuten automáticamente durante el proceso de desarrollo.
+  - Permite ajustar los porametros de comparación según las necesidades.
+  - Genera capturas de pantalla que resaltan las diferencias visuales, facilitando la identificación y resolución de problemas.
+  - Ofrece informes detallados después de cada ejecución de prueba, lo que facilita la identificación y solución de problemas visuales.
+  #### Desventajas:
+  - Puede ser demasiado sensible a cambios mínimos, lo que podría generar falsos positivos o negativos.
+  - La configuración inicial puede requerir tiempo, especialmente para usuarios que no están familiarizados con la herramienta.
+  - Se centra en pruebas visuales y no proporciona funcionalidades avanzadas para probar la lógica del negocio u otras funcionalidades no visuales.
