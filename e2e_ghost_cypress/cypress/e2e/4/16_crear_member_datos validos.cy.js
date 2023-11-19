@@ -2,7 +2,7 @@ describe('Funcionalidad de crear members', () => {
   const seccion = 'members';
   let membersName = '';
   let membersEmail = '';
-  const ESCENARIO = 'Escenario16'
+  const ESCENARIO = 'escenario16'
 
   
   beforeEach('Realizar Login', () => {

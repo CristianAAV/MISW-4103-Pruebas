@@ -2,7 +2,7 @@ describe('Funcionalidad de crear members', () => {
   const seccion = 'members';
   let membersName = '';
   let membersEmail = '';    
-  const ESCENARIO = 'Escenario17'
+  const ESCENARIO = 'escenario17'
 
   beforeEach('Realizar Login', () => {
     cy.hacerLoginCorrecto();

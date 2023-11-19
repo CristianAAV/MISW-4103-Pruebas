@@ -2,7 +2,7 @@ describe('Funcionalidad de crear eliminar members', () => {
   const seccion = 'members';
   let membersName = '';
   let membersEmail = ''; 
-  const ESCENARIO = 'Escenario20'
+  const ESCENARIO = 'escenario20'
 
   beforeEach('Realizar Login', () => {
     cy.hacerLoginCorrecto();
