@@ -115,7 +115,8 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * npm install @cucumber/cucumber@7.2.1
 * Ir al archivo properties.json y cambiar  el email y el password según el usuario que se tiene en Ghost.
 * Para la ejecucion secunecial de kraken se desarrollo un codigo que copia y pega los archivos de preubas los ejecuta y los elimina post ejecucion.
-* Para ejecutarlo escriba el siguiente comando: node ejecutar2.js
+* Para ejecutarlo escriba el siguiente comando: node ejecutar4.js para la versión 4.44
+* Para ejecutarlo escriba el siguiente comando: node ejecutar5.js para la versión 5.71
 * Este ejecuta y confirma el resultado de la prueba, pero la ejecucion es algo lenta si por algun motivo siente que no siguio ejecutando oprima una flecha en la consola donde esta ejecutando el codigo.
 * Si por algun motivo la ejecucion del codigo se cancela o se traba y cierras la ejecucion es importante validar que en la carpeta  ...\MISW-4103-Pruebas\e2e_ghost_kraken\features no existan archivos con la extencion .feature ya que de lo contrario el kraken no podra ejecutarse correctamente con el script desarrollado (adicional verificar no existan members creados).
 * Es necesario ejecutar las pruebas de forma secuencial incrementalmente, si desea validar un test de forma individual debe dirigirse a la carpeta  ...\MISW-4103-Pruebas\e2e_ghost_kraken\features\features. Seleccionar la prueba que desea ejecutar copiarlo y pegarlo en ...\MISW-4103-Pruebas\e2e_ghost_kraken\features. Ejecutarlo con el comando: npx kraken-node run. (para la prueba 16 es importante que no existan miembros con el correo newmember@uniandes.edu.co, debido a que los miembros no pueden contener correos repetidos)
@@ -140,7 +141,7 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Para ejecutar las pruebas para la version 5, ejecute el siguiente comando: npx cypress run --env VERSION=5 --spec "cypress/e2e/5/*.cy.js"
 * Las imagenenes correspondientes a cada prueba se almacenan en la carpeta "\vrt\[version_ghost]"
   #### Reporte de resultados:
-  - misMatch: 0.1
+  - misMatch: 10
     https://echaparroa-uniandes.github.io/MISW-4103-VRT_resemble/
   #### Ventajas:
   - Fácil uso ya que posee una sintaxis sencilla.
@@ -157,7 +158,8 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Ejecutar el siguiente comando: node VRT.JS, se generará el archivo Backstop.js y se ejecutaran las pruebas de VRT.
   
   #### Reporte de resultados:
-  - misMatch: 0.1
+  - misMatch: 10
+    https://cristianaav.github.io/VRT_Backstop/ 
     
   #### Ventajas:
   - Es fácil de integrar con flujos de trabajo de desarrollo y sistemas de integración continua (CI) para asegurar que las pruebas visuales se ejecuten automáticamente durante el proceso de desarrollo.
