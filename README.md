@@ -59,7 +59,9 @@
 ### Configuración
 * Para la ejecucion de las pruebas es importante realizar una instalacion limpia de el Ghost, por esto se solicita eliminar cualquier contenedor de Ghost que se tenga en Docker.
 * Instalar la versión de ghost que esta en docker (https://hub.docker.com/_/ghost/).
-Codigo a ejecutar: docker run -d --name some-ghost -e NODE_ENV=development -e url=http://localhost:3001 -p 3001:2368 ghost
+Codigo a ejecutar:
+    docker run -d --name ghostv4 -e NODE_ENV=development -e url=http://localhost:3001 -p 3004:2368 ghost:4.44
+    docker run -d --name ghostv5 -e NODE_ENV=development -e url=http://localhost:3001 -p 3005:2368 ghost:5.71
 * Abrir el enlace http://localhost:3001/ghost/#/dashboard, crear un usuario administrador.
 
 ## Kraken-node
