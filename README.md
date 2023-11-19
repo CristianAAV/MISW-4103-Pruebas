@@ -140,6 +140,7 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Para ejecutar las pruebas para la version 5, ejecute el siguiente comando: npx cypress run --env VERSION=5 --spec "cypress/e2e/5/*.cy.js"
 * Las imagenenes correspondientes a cada prueba se almacenan en la carpeta "\vrt\[version_ghost]"
   #### Reporte de resultados:
+  - misMatch: 0.1
     https://echaparroa-uniandes.github.io/MISW-4103-VRT_resemble/
   #### Ventajas:
   - Fácil uso ya que posee una sintaxis sencilla.
@@ -154,7 +155,9 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * npm install -g backstopjs.
 * Ejecutar el siguiente comando: backstop init.
 * Ejecutar el siguiente comando: node VRT.JS, se generará el archivo Backstop.js y se ejecutaran las pruebas de VRT.
+  
   #### Reporte de resultados:
+  - misMatch: 0.1
     
   #### Ventajas:
   - Es fácil de integrar con flujos de trabajo de desarrollo y sistemas de integración continua (CI) para asegurar que las pruebas visuales se ejecuten automáticamente durante el proceso de desarrollo.
