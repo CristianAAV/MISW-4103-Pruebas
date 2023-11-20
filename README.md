@@ -141,7 +141,7 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Para ejecutar las pruebas para la version 5, ejecute el siguiente comando: npx cypress run --env VERSION=5 --spec "cypress/e2e/5/*.cy.js"
 * Las imagenenes correspondientes a cada prueba se almacenan en la carpeta "\vrt\[version_ghost]"
   #### Reporte de resultados:
-  - misMatch: 10
+  - misMatch: 10%
     https://echaparroa-uniandes.github.io/MISW-4103-VRT_resemble/
   #### Ventajas:
   - Fácil uso ya que posee una sintaxis sencilla.
@@ -149,7 +149,10 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
   - Permite ajustar los porametros de comparación según las necesidades.
   #### Desventajas:
   - Tiene bastante sensibilidad a la hora de encontrar pequeños cambios, generando falsos positivos o negativos en la comparación.
-  - Dependiendo del tamaño de las imagenes podria variar el rendimiento del mismo,
+  - Dependiendo del tamaño de las imagenes podria variar el rendimiento del mismo.
+  - No tiene un "reporteador" que genere los resultados automáticamente.
+  - En imágenes en las cuales solo varia el texto el análisis muestra una gran diferencia.
+  - Del mismo modo las imágenes en las que varias colores de fondo el análisis muestra que existen diferencias.
     
 ### Backstop.js
 * Clonar el repositorio.
@@ -158,7 +161,7 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Ejecutar el siguiente comando: node VRT.JS, se generará el archivo Backstop.js y se ejecutaran las pruebas de VRT.
   
   #### Reporte de resultados:
-  - misMatch: 10
+  - misMatch: 10%
     https://cristianaav.github.io/VRT_Backstop/ 
     
   #### Ventajas:
