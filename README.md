@@ -178,3 +178,6 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
   - Puede ser demasiado sensible a cambios mínimos, lo que podría generar falsos positivos o negativos.
   - La configuración inicial puede requerir tiempo, especialmente para usuarios que no están familiarizados con la herramienta.
   - Se centra en pruebas visuales y no proporciona funcionalidades avanzadas para probar la lógica del negocio u otras funcionalidades no visuales.
+
+# Link Video Explicativo:
+https://www.youtube.com/watch?v=kmxOlWfNG0Y
