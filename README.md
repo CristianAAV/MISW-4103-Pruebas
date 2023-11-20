@@ -122,24 +122,29 @@ Las instrucciones de ejecucion de la semana 5 se encuentran [aqui](https://githu
 * Es necesario ejecutar las pruebas de forma secuencial incrementalmente, si desea validar un test de forma individual debe dirigirse a la carpeta  ...\MISW-4103-Pruebas\e2e_ghost_kraken\features\features. Seleccionar la prueba que desea ejecutar copiarlo y pegarlo en ...\MISW-4103-Pruebas\e2e_ghost_kraken\features. Ejecutarlo con el comando: npx kraken-node run. (para la prueba 16 es importante que no existan miembros con el correo newmember@uniandes.edu.co, debido a que los miembros no pueden contener correos repetidos)
 
 ### Cypress 
-* clonar el repositorio, ir a la carpeta e2e_ghost_cypress
+* Clonar el repositorio, e ir a la carpeta “e2e_ghost_cypress”
 * npm install -g cypress
 * Instalar las dependencias con el comando npm i
-* Ir al archivo params.js y cambiar  el email y el password según el usuario que se tiene en Ghost.
-* Para ejecutar las pruebas ejecutar el comando: npx cypress run --headless
-* Opcionalemente puede ejecutar el comanado:  npx cypress open
-* Es necesario ejecutar las pruebas de forma secuencial incrementalmente (para la prueba 16 es importante que no existan miembros con el correo newmember@uniandes.edu.co, debido a que los miembros no pueden contener correos repetidos)
-
-### Resemble.js
-* Clonar el repositorio y dirigirse a la carpeta "e2e_ghost_cypress"
-* Instalar las dependencias con el comando "npm install"
-* Las pruebas de ghost tanto para la version 4.44 como 5.71 se encuentran en los folders "\cypress\e2e\4" y "\cypress\e2e\5" respectivamnte
-* El archivo de configuracion se encuentra en "cypress.config.js", alli podra colocar las URLs asi como las credenciales para cada version:
-  ![config_cypress](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/assets/142269475/b794c75f-f536-4afe-ab4a-89ba34516476)
+* Ir al archivo cypress.config.js y cambiar la URL, email y el password para  cada instalacion de GHOST:
+  ![image](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/assets/111321588/7b542609-7f16-430b-8505-bc2298c6d946)
 * Borrar el folder "vrt" antes de ejecutar las pruebas
 * Para ejecutar las pruebas para la version 4, ejecute el siguiente comando: npx cypress run --env VERSION=4 --spec "cypress/e2e/4/*.cy.js"
 * Para ejecutar las pruebas para la version 5, ejecute el siguiente comando: npx cypress run --env VERSION=5 --spec "cypress/e2e/5/*.cy.js"
-* Las imagenenes correspondientes a cada prueba se almacenan en la carpeta "\vrt\[version_ghost]"
+* Las imagenes correspondientes a cada prueba se almacenan en la carpeta "\vrt[version_ghost]"
+
+### Resemble.js
+* Despues de haber ejecutado el paso anterior, ir a la carpeta “vrt_resemble”
+* Instalar las dependencias con el comando npm i
+* Puede utilizar el archivo config.json y cambiar los parametros por defecto:
+![image](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/assets/111321588/2db7af4f-a9fa-4df7-b75a-b3c522747dee)
+    - resultsPath: Folder en donde se generan los resultados
+    - pathImagesGhostV4: Folder de imagenes de las pruebas a la version 4 de Ghost
+    - pathImagesGhostV5:: Folder de imagenes de las pruebas a la version 5 de Ghost
+    - escenariosVrt: Listado de escenarios que se desean comparar
+    - porcentajeDiferencia: Porcentaje minimo de diferencia entre dos imagenes que se desea generar.
+* Ejecutar el comando “node index.js” para empezar con el proceso de comparacacion de imagenes
+* Ver los resultados generados dirigiendose al archivo “./results/report.html”.
+
   #### Reporte de resultados:
   - misMatch: 10%
     https://echaparroa-uniandes.github.io/MISW-4103-VRT_resemble/
