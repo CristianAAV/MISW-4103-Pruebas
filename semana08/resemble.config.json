@@ -1,0 +1,24 @@
+{
+  "options":{
+      "output": {
+          "errorColor": {
+              "red": 255,
+              "green": 0,
+              "blue": 255
+          },
+          "errorType": "movement",
+          "largeImageThreshold": 1200,
+          "useCrossOrigin": false,
+          "outputDiff": true
+      },
+      "scaleToSameSize": true,
+      "ignore": "antialiasing"
+  }, 
+  "params":{
+    "resultsPath": "./results",
+    "pathImagesGhostV_A": "./vrt/ghost_5.71",
+    "pathImagesGhostV_B": "./vrt/ghost_5.74",
+    "escenariosVrt":[],
+    "porcentajeDiferencia" : 0
+  }
+}

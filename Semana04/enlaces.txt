@@ -1,0 +1,2 @@
+repositorio para reportar los issues: https://github.com/CristianAAV/MISW-4103-Pruebas/issues
+video de estrategias y experiencias con monkey y ripuppet: https://youtu.be/Jca4LFVVMjo
