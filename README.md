@@ -40,8 +40,7 @@ Para ello utilizamos Cypress y resemble para hacer la comparacion de imagenes, y
 
 ## Inventario de Pruebas exploratorias
 - [Semana 8](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/blob/main/inventario-pruebas-exploratorias%20Semana%201%20-%20Final.xlsx)
-- [Semana 1 - A](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/blob/main/inventario-pruebas-
-exploratorias%20Semana%201%20-Antecendente_1.xlsx)
+- [Semana 1 - A](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/blob/main/inventario-pruebas-exploratorias%20Semana%201%20-Antecendente_1.xlsx)
 - [Semana 1 - B](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/blob/main/inventario-pruebas-exploratorias%20Semana%201%20-Antecendente_2.xlsx)
 
 ## Registro de Incidencias
