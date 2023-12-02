@@ -26,3 +26,10 @@ Para ello utilizamos Cypress y resemble para hacer la comparacion de imagenes, y
     - porcentajeDiferencia: Porcentaje de diferencia entre las imagenes
 - Para procesar la regresion  visual, puede borrar la carpeta "results" y ejecutar el comnando: node index.js
 - Para ver los resultados dirijase a la carpeta "results" y visualice el archivo index.html
+
+# [MISW-4103-semana7: Instrucciones de Ejecucion](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/wiki/README.MD-SEMANA-7)
+# [MISW-4103-semana6: Instrucciones de Ejecucion](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/wiki/README.MD-SEMANA-6)
+# [MISW-4103-semana5: Instrucciones de Ejecucion](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/wiki/README.MD-SEMANA-5)
+# MISW-4103-semana4: Instrucciones de Ejecucion
+ * [Instrucciones - Monkey cypress](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/blob/main/Semana04/reporte_experiencia_monkey_cypress.pdf)
+ * [Instrucciones - rippuppet](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/blob/main/Semana04/reporte_experencia_rippuppet.pdf)
