@@ -15,7 +15,7 @@ Para ello utilizamos Cypress y resemble para hacer la comparacion de imagenes, y
 - docker run -d --name ghost574 -e NODE_ENV=development -e url=http://localhost:3001 -p 3574:2368 ghost:5.74
 
 ## Ejecutar pruebas 
-- Despues de clonar el repositorio, dirijase a la carpeta semana8, y luego e2e_cypress_movil
+- Despues de clonar el repositorio, dirijase a la carpeta semana08
 - Debe tener instaldo cypress de manera global para facilitar la ejecucion de las pruebas
 - Instale las dependencias con el comando: npm install -g cypress
 - Puede configurar los parametros de ejecucion el el archivo cypress.config.js, alli podrá modificar las URLs correspondientes a ambas versiones de GHOST, las credenciales de usuario asi como la resolucion de la pantalla con cual se desean realizar las pruebas, la cual por defecto es de 480 x 800
@@ -37,6 +37,9 @@ Para ello utilizamos Cypress y resemble para hacer la comparacion de imagenes, y
 
 ## Estrategia de Pruebas
 [Estrategia de pruebas](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/blob/main/estrategia-pruebas.pdf)
+
+## Video de Presentacion
+[Video de presentacion](https://www.youtube.com/watch?v=XDLk7pdR8as)
 
 ## Inventario de Pruebas exploratorias
 - [Semana 8](https://github.com/CristianAAV/MISW-4103-Pruebas--GHOST-5.71/blob/main/inventario-pruebas-exploratorias%20Semana%201%20-%20Final.xlsx)
