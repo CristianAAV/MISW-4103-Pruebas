@@ -43,5 +43,5 @@
   max-height: 400px;
 }
 .imgfull{
-  width:100%
+  max-width: 480px;
 }

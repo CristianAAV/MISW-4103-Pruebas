@@ -2,17 +2,17 @@ module.exports = {
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
-      const version = config.env.VERSION || 5.71;
+      const version = config.env.VERSION || 5.74;
       const params = {
         5.71:{
           url: 'http://localhost:3571/ghost',
-          email: 'equipo15@uniandes.edu.co',
-          password: 'equ11po@15'
+          "email": 'equipo15@uniandes.edu.co',
+          "password":  'equ11po@15',
         },
         5.74:{
           url: 'http://localhost:3574/ghost',
-          email: 'equipo15@uniandes.edu.co',
-          password: 'equ11po@15'
+          "email": 'equipo15@uniandes.edu.co',
+          "password":  'equ11po@15',
         },
         screenSize: {
           width: 480,
@@ -47,5 +47,32 @@ module.exports = {
      
       return config;
     },
+    env:{
+      "folderPoolApriori": "cypress/fixtures",
+      "dataPoolApriori":[
+        {
+          "archivo":"tag_pool_apriori.json",
+          "url": "https://my.api.mockaroo.com/tag_apriori.json?key=4b064d20"
+        },
+        {
+          "archivo":"post_pool_apriori.json",
+          "url": "https://my.api.mockaroo.com/post_apriori.json?key=bd800ef0"
+        },
+        {
+          "archivo":"member_pool_apriori.json",
+          "url": "https://my.api.mockaroo.com/member_pool_apriori.json?key=29e4e000"
+        },
+        {
+          "archivo":"pages_pool_apriori.json",
+          "url": "https://my.api.mockaroo.com/pages_apriori.json?key=4b6d9540"
+        }
+      ],
+      "dataPoolPseudoAleatorio":{
+        "tag": "https://my.api.mockaroo.com/tag_pseudo_aleatorio.json?key=4b064d20",
+        "post": "https://my.api.mockaroo.com/post_pseudo_aleatorio.json?key=bd800ef0",
+        "member": "https://my.api.mockaroo.com/member_pseudo_aleatorio.json?key=29e4e000",
+        "pages": "https://my.api.mockaroo.com/pages_pseudo_aleatorio.json?key=4b6d9540"
+      },
+    },  
   },
 };
